@@ -1,0 +1,112 @@
+<html id="background">
+<title>Kalli's World</title>
+<script>
+function banner(){
+var text = confirm("Did You Really Want to Click on My Banner?");
+return text;
+}
+function answer(){
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop
+if(selection == false) {
+message = message + "<b><p style='color:green'>Good choice, thankyou for letting me know!</p></b>";
+} 
+document.getElementById("response").innerHTML = message;
+} //end function answer
+</script>
+</head>
+<center>
+<nav>
+		<a href="index.html" class="navitem">Home</a>
+		<a href="barbies.html" class="navitems">Barbies</a>
+		<a href="DIY.html" class="navitems">DIY</a>
+		<a href="animals.html" class="navitems">Animals</a>
+		<a href="crafts.html" class="navitems">Crafts</a>
+		<a href="Funactivities.html" class="navitems">Fun Activities</a>
+		<a href="Baking.html" class="navitems">Baking</a></ul>
+<div class="rightside">
+
+</div
+</nav>
+<body> 
+<a onclick="return banner()" href="http://simplystem.com">
+	<header id="header"><img width="60%" src="banner.jpg"></header>
+</a>
+<br>
+</br>
+<h1>
+<u> <span class="wrap-text"> Welcome to Kalli's World </span>
+</u>
+</h1>
+</center>
+
+<center>
+      <img width="40%" src="Crafts3.jpg">
+    
+<p class="paragraph">
+Hi, my name is Kalli and welcome to my blog.</p><p> On this site I will show you some things I like to do, for fun or on daily basis, like playing with my <i>barbies, 24 challanges,</i> and <u>some fun and creative</u><i> DIY</i> life hacks and <u>fun activites</u>.
+
+</center>
+<ol>
+<li>Here are <u>some of the fun</u> <i><b>Crafts</b><i> we can do:</li>
+<i>
+<div class="wrap-list">
+<ul>
+<li class="listitem">Art</li>
+<li class="listitem">Slime</li>
+<li class="listitem">School Supplies</li>
+<li class="listitem">Barbie accessories</li>
+</ul>
+</div>
+<li>DIY School Supplies</li>
+<div class="wrap-list">
+<ul>
+<li class="listitem" class="listitem">Notebooks</li>
+<li class="listitem">School Supplies</li>
+<li class="listitem">Edable School Supplies</li>
+</ul>
+<div class="wrap-list">
+<li>Barbie DIY</li>
+<ul>
+<li class="listitem">Barbie Clothes</li>
+<li class="listitem">Barbie Furniture</li>
+<li class="listitem">Barbie School Supplies</li>
+</ul>
+</div>
+</i>
+<br>
+<br>
+<br>
+<div class="wrap-trivia">
+<p style="font-size:25px";><b><color:black>What is you favorite kind of YouTube video?</color:black></b></p>
+<form>
+<div id="response"> </div>
+<input type="radio" name="Youtube Trivia" value="yes"> Slime Challenges <br>
+<input type="radio" name="Youtube Trivia" value="yes"> 24 challanges <br>
+<input type="radio" name="Youtube Trivia" value="yes"> DIY <br>
+<input type="radio" name="Youtube Trivia" value="yes"> Hide and Seek <br>
+<input type="radio" name="Youtube Trivia" value="yes"> Barbie <br>
+</br>
+<input onclick="answer()" type="button" value="Submit" id="button">
+
+</form>
+</div class="wrap-trivia">
+<hr></hr>
+<center><img width="34%" src="https://cdn.timesofisrael.com/blogs/uploads/2018/03/barbie-1841835_960_720.jpg"</img>
+<img width="39.5%" src="http://craftingagreenworld.com/wp-content/uploads/2014/09/craft-supplies.jpg"</img></center>
+<br></br>
+<hr></hr>
+<center>
+<a href="https://www.youtube.com/user/WWWengie"><i>Other good DIY life hacks by Wengie</i></a>
+<br></br>
+
+<footer id="footer">Blog designed by Kallista</footer>
+</centre>
+</body>
+</html>
